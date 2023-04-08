@@ -1,14 +1,15 @@
 CC=gcc
+LIBC=libc.a
 all: reverse_shell
 all: down
 
 reverse_shell: reverse_shell.c
-	gcc -Wall -g -fPIE -L. /lib/libc.a\
+	$(CC) -Wall -g -fPIE -L. /lib/$(LIBC)\
 		-L. -static-libgcc\
 		-o reverse_shell reverse_shell.c
 
 down: down.c
-	gcc -g -Wall down.c -o down -lcurl
+	$(CC) -g -Wall down.c -o down -lcurl
 
 clean: 
 	rm reverse_shell
