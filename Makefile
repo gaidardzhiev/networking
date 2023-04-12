@@ -13,5 +13,5 @@ down: down.c
 	$(CC) -g -Wall down.c -o down -lcurl
 
 clean: 
-	rm reverse_shell
+	rm reverse_shell down
 
