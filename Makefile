@@ -4,7 +4,8 @@ all: reverse_shell
 all: down
 
 reverse_shell: reverse_shell.c
-	$(CC) -Wall -g -fPIE -L. /lib/$(LIBC)\
+	$(CC) -Wall -g -no-pie -static\
+		-L. /lib/$(LIBC)\
 		-L. -static-libgcc\
 		-o reverse_shell reverse_shell.c
 
