@@ -15,7 +15,7 @@ down: down.c
 	$(CC) -g -Wall down.c -o down -lcurl
 
 revsh: revsh.c
-	$(TCC) revsh.c - revsh
+	$(TCC) revsh.c -o revsh
 
 clean: 
 	rm reverse_shell down revsh
