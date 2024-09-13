@@ -18,4 +18,4 @@ obf: obf.c
 	$(TCC) obf.c -o obf
 
 clean: 
-	rm reverse_shell down revsh
+	rm reverse_shell down obf
