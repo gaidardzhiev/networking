@@ -3,3 +3,7 @@ down.c - grabs html from a web page and dumps it to stdout using libcurl
 reverse_shell.c - statically linked reverse shell  
 
 obf.c - obfuscated reverse shell
+
+brainf_rev.sh - brainfu*k reverse shell
+
+whitespace_rev.sh - whiteapace reverse shell
