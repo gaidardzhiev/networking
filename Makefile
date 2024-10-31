@@ -4,7 +4,6 @@ TCC=tcc
 all: reverse_shell
 all: down
 all: obf
-all: ipconf
 
 reverse_shell: reverse_shell.c
 	$(CC) -Wall -g -no-pie -static\
